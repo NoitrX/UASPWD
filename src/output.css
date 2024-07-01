@@ -554,20 +554,265 @@ video {
   --tw-contain-style:  ;
 }
 
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
+.mx-16 {
+  margin-left: 4rem;
+  margin-right: 4rem;
+}
+
+.mx-2 {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.mx-4 {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
+.mb-5 {
+  margin-bottom: 1.25rem;
+}
+
+.mt-8 {
+  margin-top: 2rem;
+}
+
+.mt-12 {
+  margin-top: 3rem;
+}
+
+.me-4 {
+  margin-inline-end: 1rem;
+}
+
+.me-2 {
+  margin-inline-end: 0.5rem;
+}
+
+.ml-2 {
+  margin-left: 0.5rem;
+}
+
+.flex {
+  display: flex;
+}
+
+.h-1\/2 {
+  height: 50%;
+}
+
+.h-screen {
+  height: 100vh;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-items-center {
+  justify-items: center;
+}
+
+.gap-5 {
+  gap: 1.25rem;
+}
+
+.space-x-2 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(0.5rem * var(--tw-space-x-reverse));
+  margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.space-x-4 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(1rem * var(--tw-space-x-reverse));
+  margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.border {
+  border-width: 1px;
+}
+
+.border-r-2 {
+  border-right-width: 2px;
+}
+
+.border-\[\#8E8E8E\] {
+  --tw-border-opacity: 1;
+  border-color: rgb(142 142 142 / var(--tw-border-opacity));
+}
+
+.border-\[\#D8AE7E\] {
+  --tw-border-opacity: 1;
+  border-color: rgb(216 174 126 / var(--tw-border-opacity));
+}
+
+.bg-\[\#8E8E8E\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(142 142 142 / var(--tw-bg-opacity));
+}
+
+.bg-cover {
+  background-size: cover;
+}
+
+.p-8 {
+  padding: 2rem;
+}
+
+.px-12 {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+.py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-\[10px\] {
+  font-size: 10px;
+}
+
+.text-\[14px\] {
+  font-size: 14px;
+}
+
+.text-\[32px\] {
+  font-size: 32px;
 }
 
 .font-bold {
   font-weight: 700;
 }
 
-.text-blue-500 {
-  --tw-text-opacity: 1;
-  color: rgb(59 130 246 / var(--tw-text-opacity));
+.font-semibold {
+  font-weight: 600;
 }
 
-.underline {
-  text-decoration-line: underline;
+.text-\[\#8E8E8E\] {
+  --tw-text-opacity: 1;
+  color: rgb(142 142 142 / var(--tw-text-opacity));
+}
+
+.text-\[\#D8AE7E\] {
+  --tw-text-opacity: 1;
+  color: rgb(216 174 126 / var(--tw-text-opacity));
+}
+
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+/* FONTS */
+
+/* Josefins Sans */
+
+/* 
+.josefin-sans-<uniquifier> {
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+} */
+
+/* Modern Antiqua */
+
+/* Sahitya */
+
+/* Vujahday Script */
+
+/* 
+.modern-antiqua-regular {
+  font-family: "Modern Antiqua", serif;
+  font-weight: 400;
+  font-style: normal;
+} 
+  font-family: "Vujahday Script", cursive;
+  font-weight: 400;
+  font-style: normal;
+  
+  font-family: "Sahitya", serif;
+  font-weight: 400;
+  font-style: normal;
+
+  */
+
+.hero-section {
+  position: relative;
+  background-image: url("assets/images/bg-uas.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-section .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  /* Adjust the opacity as needed (0.7 in this case) */
+  z-index: 1;
+}
+
+.hero-section > .w-full {
+  position: relative;
+  z-index: 2;
+}
+
+.header-ci-tailor {
+  font-family: "Modern Antiqua", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 32px;
+}
+
+.header {
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.hero {
+  font-family: "Sahitya", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.hero span {
+  font-family: "Vujahday Script", cursive;
+  font-weight: 400;
+  font-style: normal;
 }

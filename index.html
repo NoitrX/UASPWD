@@ -5,9 +5,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="./src/output.css" rel="stylesheet" />
     <link rel="stylesheet" href="./src/input.css" />
+    <link rel="shortcut icon" href="assets/images/logo.png" type="image/x-icon" />
+    <title>Ci Tailor</title>
   </head>
   <body>
-    <h1 class="text-blue-500 font-bold underline">Hello world!</h1>
-    <h2 class="font-bold text-3xl">HAI</h2>
+    <!-- Hero Section -->
+    <section class="hero-section w-full h-screen bg-cover" style="background-image: url('assets/images/bg-uas.png')" id="hero-section">
+      <div class="overlay"></div>
+
+      <!-- Navbar -->
+      <div class="header w-full">
+        <!-- Flex Untuk 3 Element Icon Logo Dan Tombol Pesanan -->
+        <div class="w-full flex justify-between items-center p-8">
+          <!-- Flex Pertama Untuk Informasi Icon logo -->
+          <div class="flex space-x-4 text-[#8E8E8E]">
+            <div class="flex justify-center items-center space-x-2">
+              <img src="assets/icon/phone (1) 1.svg" alt="" />
+              <p>081387198080</p>
+            </div>
+
+            <div class="flex justify-center items-center space-x-2">
+              <img src="assets/icon/mail 1.svg" alt="" />
+              <p>cintyatailor@gmail.com</p>
+            </div>
+          </div>
+
+          <!-- Logo Dan Header -->
+          <div class="flex flex-col justify-center items-center text-center">
+            <h2 class="text-white">LOGO</h2>
+            <h2 class="text-white header-ci-tailor">CI TAILOR</h2>
+            <h5 class="text-[#D8AE7E] text-[10px] font-semibold">*** CUSTOM TAILOR ***</h5>
+          </div>
+
+          <div class="px-12 py-3 border border-[#D8AE7E] text-[#D8AE7E]">
+            <button class="font-bold flex items-center space-x-2">BUAT PESANAN <img src="assets/icon/shopping-cart 1.svg" class="mx-2" alt="" /></button>
+          </div>
+        </div>
+
+        <!-- Flex For Menu -->
+        <div class="w-full flex justify-center items-center flex-col">
+          <ul class="flex justify-items-center items-center gap-5 text-[#8E8E8E] mb-5">
+            <li class="border-r-2 border-[#8E8E8E]"><a class="text-[14px] mx-16" href="">HOME</a></li>
+            <li class="border-r-2 border-[#8E8E8E]"><a class="text-[14px] mx-16" href="">TENTANG KAMI</a></li>
+            <li class="border-r-2 border-[#8E8E8E]"><a class="text-[14px] mx-16" href="">PRODUK</a></li>
+            <li class="border-r-2 border-[#8E8E8E]"><a class="text-[14px] mx-16" href="">PEMESANAN</a></li>
+            <li class="mx-16"><a class="text-[14px]" href="">KONTAK</a></li>
+          </ul>
+          <hr class="w-full bg-[#8E8E8E]" />
+        </div>
+      </div>
+
+      <!-- Hero Content -->
+      <div class="w-full flex justify-center items-center h-1/2 flex-col mt-12">
+        <div class="text-white text-[32px] mb-4 hero text-center mt-8">
+          <h2>MENYEDIAKAN <span class="text-[#D8AE7E] juvahday">SEGALA</span> JENIS BAJU</h2>
+          <h2>DENGAN KUALITAS TINGGI</h2>
+        </div>
+
+        <div class="px-12 py-3 border border-[#D8AE7E] text-[#D8AE7E]">
+          <button class="font-bold flex items-center space-x-2">LIHAT DETAIL <img src="assets/icon/share 1.svg" class="ml-2" alt="" /></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-section" id="about-section"></section>
   </body>
 </html>
