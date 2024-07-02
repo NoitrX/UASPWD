@@ -558,8 +558,16 @@ video {
   grid-column: span 2 / span 2;
 }
 
+.col-span-4 {
+  grid-column: span 4 / span 4;
+}
+
 .col-span-6 {
   grid-column: span 6 / span 6;
+}
+
+.col-span-12 {
+  grid-column: span 12 / span 12;
 }
 
 .mx-16 {
@@ -575,16 +583,6 @@ video {
 .my-auto {
   margin-top: auto;
   margin-bottom: auto;
-}
-
-.mx-auto {
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.my-20 {
-  margin-top: 5rem;
-  margin-bottom: 5rem;
 }
 
 .mb-2 {
@@ -609,10 +607,6 @@ video {
 
 .mt-10 {
   margin-top: 2.5rem;
-}
-
-.mt-11 {
-  margin-top: 2.75rem;
 }
 
 .mt-12 {
@@ -651,10 +645,6 @@ video {
   margin-top: 2rem;
 }
 
-.mt-16 {
-  margin-top: 4rem;
-}
-
 .block {
   display: block;
 }
@@ -667,36 +657,12 @@ video {
   display: grid;
 }
 
-.aspect-\[0\.7\] {
-  aspect-ratio: 0.7;
-}
-
-.aspect-\[0\.5\] {
-  aspect-ratio: 0.5;
-}
-
 .h-1\/2 {
   height: 50%;
 }
 
 .h-screen {
   height: 100vh;
-}
-
-.max-h-9 {
-  max-height: 2.25rem;
-}
-
-.max-h-96 {
-  max-height: 24rem;
-}
-
-.max-h-72 {
-  max-height: 18rem;
-}
-
-.min-h-screen {
-  min-height: 100vh;
 }
 
 .w-1\/2 {
@@ -707,12 +673,12 @@ video {
   width: 3rem;
 }
 
-.w-\[39\%\] {
-  width: 39%;
+.w-\[50\%\] {
+  width: 50%;
 }
 
-.w-\[61\%\] {
-  width: 61%;
+.w-\[55\%\] {
+  width: 55%;
 }
 
 .w-full {
@@ -722,34 +688,6 @@ video {
 .w-max {
   width: -moz-max-content;
   width: max-content;
-}
-
-.w-\[62\%\] {
-  width: 62%;
-}
-
-.w-\[64\%\] {
-  width: 64%;
-}
-
-.w-\[50\%\] {
-  width: 50%;
-}
-
-.w-\[55\%\] {
-  width: 55%;
-}
-
-.w-\[40\%\] {
-  width: 40%;
-}
-
-.w-\[\%\] {
-  width: %;
-}
-
-.w-\[60\%\] {
-  width: 60%;
 }
 
 .grow {
@@ -847,11 +785,6 @@ video {
   border-color: rgb(0 0 0 / var(--tw-border-opacity));
 }
 
-.border-gray-200 {
-  --tw-border-opacity: 1;
-  border-color: rgb(229 231 235 / var(--tw-border-opacity));
-}
-
 .border-opacity-20 {
   --tw-border-opacity: 0.2;
 }
@@ -881,9 +814,19 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-orange-300 {
+.bg-blue-500 {
   --tw-bg-opacity: 1;
-  background-color: rgb(253 186 116 / var(--tw-bg-opacity));
+  background-color: rgb(59 130 246 / var(--tw-bg-opacity));
+}
+
+.bg-red-300 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(252 165 165 / var(--tw-bg-opacity));
+}
+
+.bg-slate-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(100 116 139 / var(--tw-bg-opacity));
 }
 
 .bg-white {
@@ -891,23 +834,13 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-yellow-400 {
+.bg-purple-500 {
   --tw-bg-opacity: 1;
-  background-color: rgb(250 204 21 / var(--tw-bg-opacity));
+  background-color: rgb(168 85 247 / var(--tw-bg-opacity));
 }
 
 .bg-cover {
   background-size: cover;
-}
-
-.object-contain {
-  -o-object-fit: contain;
-     object-fit: contain;
-}
-
-.object-cover {
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 
 .object-fill {
@@ -923,10 +856,6 @@ video {
   padding: 2rem;
 }
 
-.p-20 {
-  padding: 5rem;
-}
-
 .px-12 {
   padding-left: 3rem;
   padding-right: 3rem;
@@ -935,6 +864,11 @@ video {
 .px-16 {
   padding-left: 4rem;
   padding-right: 4rem;
+}
+
+.px-20 {
+  padding-left: 5rem;
+  padding-right: 5rem;
 }
 
 .px-4 {
@@ -960,31 +894,6 @@ video {
 .py-5 {
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
-}
-
-.py-6 {
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
-}
-
-.py-7 {
-  padding-top: 1.75rem;
-  padding-bottom: 1.75rem;
-}
-
-.px-20 {
-  padding-left: 5rem;
-  padding-right: 5rem;
-}
-
-.px-2 {
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-}
-
-.px-28 {
-  padding-left: 7rem;
-  padding-right: 7rem;
 }
 
 .pl-20 {
@@ -1028,11 +937,6 @@ video {
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
-}
-
-.text-2xl {
-  font-size: 1.5rem;
-  line-height: 2rem;
 }
 
 .font-bold {
@@ -1096,11 +1000,6 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.text-gray-300 {
-  --tw-text-opacity: 1;
-  color: rgb(209 213 219 / var(--tw-text-opacity));
 }
 
 /* FONTS */
@@ -1220,14 +1119,6 @@ video {
 
   .max-md\:mt-10 {
     margin-top: 2.5rem;
-  }
-
-  .max-md\:mt-2 {
-    margin-top: 0.5rem;
-  }
-
-  .max-md\:mt-5 {
-    margin-top: 1.25rem;
   }
 
   .max-md\:w-full {
