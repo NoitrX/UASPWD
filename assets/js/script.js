@@ -61,14 +61,19 @@ function calculateGrandTotal(cart) {
   return cart.reduce((total, item) => total + item.price * item.qty, 0);
 }
 
-const checkOut = (item) => {
+const checkOut = () => {
   const cart = JSON.parse(localStorage.getItem("cart")) || [];
-  localStorage.setItem("checkout", JSON.stringify(cart));
+  let checkoutHistory = JSON.parse(localStorage.getItem("checkoutHistory")) || [];
+
+  checkoutHistory.push({ items: cart, checkoutTime: new Date() });
+
   localStorage.removeItem("cart");
-  console.log("checkout Successfull");
+
+  localStorage.setItem("checkoutHistory", JSON.stringify(checkoutHistory));
+
+  console.log("Checkout successful");
   updateCartTable();
 };
-
 updateCartTable();
 
 document.querySelectorAll("button[data-id]").forEach((button) => {
