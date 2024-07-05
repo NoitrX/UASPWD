@@ -5,20 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="./src/output.css" rel="stylesheet" />
     <link rel="stylesheet" href="./src/input.css" />
-    <link rel="shortcut icon" href="assets/images/logo.png" type="image/x-icon" />
+    <link
+      rel="shortcut icon"
+      href="assets/images/logo.png"
+      type="image/x-icon"
+    />
     <title>Ci Tailor</title>
   </head>
   <body>
     <div class="pl-20 bg-white max-md:pl-5">
       <div class="flex gap-5 max-md:flex-col max-md:gap-0">
         <div class="flex flex-col w-[50%] max-md:ml-0 max-md:w-full">
-          <div class="flex flex-col self-stretch my-auto text-xs font-medium text-black max-md:mt-10 max-md:max-w-full">
-            <div class="self-center text-3xl tracking-[4.8px] login-logo">LOGO</div>
-            <div class="self-center mt-5 text-3xl tracking-[4.8px] max-md:mt-10 desc-login">WELCOME BACK</div>
-            <div class="self-center mt-4 text-sm text-neutral-400 tracking-[2.1px] subt-login">Enter Your Credentials</div>
+          <div
+            class="flex flex-col self-stretch my-auto text-xs font-medium text-black max-md:mt-10 max-md:max-w-full"
+          >
+            <div class="self-center text-3xl tracking-[4.8px] login-logo">
+              LOGO
+            </div>
+            <div
+              class="self-center mt-5 text-3xl tracking-[4.8px] max-md:mt-10 desc-login"
+            >
+              WELCOME BACK
+            </div>
+            <div
+              class="self-center mt-4 text-sm text-neutral-400 tracking-[2.1px] subt-login"
+            >
+              Enter Your Credentials
+            </div>
             <form action="" class="px-20">
               <div class="mb-5">
-                <label for="email" class="mt-36 block tracking-widest max-md:mt-10 max-md:max-w-full">Email</label>
+                <label
+                  for="email"
+                  class="mt-36 block tracking-widest max-md:mt-10 max-md:max-w-full"
+                  >Email</label
+                >
                 <input
                   class="w-full justify-center items-start px-9 py-5 mt-2.5 tracking-widest whitespace-nowrap bg-white border border-solid border-black border-opacity-20 text-stone-300 max-md:px-5 max-md:max-w-full"
                   type="email"
@@ -27,7 +47,11 @@
                 />
               </div>
               <div>
-                <label class="mt-10 block tracking-widest max-md:mt-10 max-md:max-w-full" for="password">Password</label>
+                <label
+                  class="mt-10 block tracking-widest max-md:mt-10 max-md:max-w-full"
+                  for="password"
+                  >Password</label
+                >
                 <input
                   class="w-full justify-center items-start px-9 py-5 mt-2.5 tracking-widest whitespace-nowrap bg-white border border-solid border-black border-opacity-20 text-stone-300 max-md:px-5 max-md:max-w-full"
                   type="password"
@@ -36,13 +60,24 @@
                 />
               </div>
               <div class="">
-                <button class="bg-[#D8AE7E] w-full justify-center items-center px-16 py-5 mt-14 text-sm font-bold text-white whitespace-nowrap max-md:px-5 max-md:mt-10 max-md:max-w-full">Login</button>
+                <button
+                  onclick="window.location.href='dashboard.html'"
+                  class="bg-[#D8AE7E] w-full justify-center items-center px-16 py-5 mt-14 text-sm font-bold text-white whitespace-nowrap max-md:px-5 max-md:mt-10 max-md:max-w-full"
+                >
+                  Login
+                </button>
               </div>
             </form>
           </div>
         </div>
-        <div class="flex flex-col ml-5 w-[55%] h-screen max-md:ml-0 max-md:w-full">
-          <img loading="lazy" srcset="assets/images/login-img.png" class="grow w-full max-md:mt-10 max-md:max-w-full h-1/2 object-fill" />
+        <div
+          class="flex flex-col ml-5 w-[55%] h-screen max-md:ml-0 max-md:w-full"
+        >
+          <img
+            loading="lazy"
+            srcset="assets/images/login-img.png"
+            class="grow w-full max-md:mt-10 max-md:max-w-full h-1/2 object-fill"
+          />
         </div>
       </div>
     </div>

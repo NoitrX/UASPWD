@@ -6,3 +6,4 @@ module.exports = {
   },
   plugins: [require("preline/plugin")],
 };
+
