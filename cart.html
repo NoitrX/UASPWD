@@ -7,11 +7,13 @@
     <link rel="stylesheet" href="./src/input.css" />
     <link rel="shortcut icon" href="assets/images/logo.png" type="image/x-icon" />
     <title>Ci Tailor | Cart</title>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   </head>
   <body>
     <section class="wh-screen max-w-screen p-20 cart">
       <div class="flex flex-col bg-white shadow-sm rounded-xl dark:bg-neutral-900 dark:shadow-neutral-700/70">
         <h2 class="ml-5 text-2xl font-semibold mb-12">CART</h2>
+        
         <div class="flex flex-col">
           <div class="-m-1.5 overflow-x-auto">
             <div class="p-1.5 min-w-full inline-block align-middle">
@@ -32,7 +34,7 @@
                   <p class="px-6 py-4 whitespace-nowrap text-sm text-gray-800 dark:text-neutral-200" id="grand-total">GRANDTOTAL :</p>
                 </div>
                 <div class="flex justify-center items-center">
-                  <button onclick="checkOut()" class="font-bold flex items-center space-x-5 bg-[#D8AE7E] text-white px-12 py-2 w-max text-xs mb-48 hover:bg-[#8f6f4b]">CHECKOUT</button>
+                  <button  class="font-bold flex items-center space-x-5 bg-[#D8AE7E] text-white px-12 checkout py-2 w-max text-xs mb-48 hover:bg-[#8f6f4b]">CHECKOUT</button>
                 </div>
               </div>
             </div>
@@ -46,8 +48,8 @@
           <div class="flex justify-center items-center gap-x-20">
               <!-- Logo Section -->
               <div class="flex flex-col items-center text-center w-1/4 mx-10">
-                  <h2 class="text-white text-2xl">LOGO</h2>
-                  <h2 class="text-white text-2xl">CI TAILOR</h2>
+                <img src="assets/images/LOGOFIX-removebg-preview.png" class="w-24" alt="">
+                  <h2 class="text-white text-2xl font-bold">CI TAILOR</h2>
                   <h1 class="text-white text-sm">Ci tailor Toko Serba sedia Untuk Kebutuhan Fashion mu.</h1>
               </div>
               <!-- Address Section -->
@@ -83,5 +85,6 @@
   <!-- footer end -->
     <script src="./node_modules/preline/dist/preline.js"></script>
     <script src="assets/js/cart.js"></script>
+    
   </body>
 </html>

@@ -43,6 +43,10 @@
   font-style: normal;
 
   */
+
+* {
+  scroll-behavior: smooth;
+}
 .hero-section {
   position: relative;
   background-image: url("assets/images/bg-uas.png");

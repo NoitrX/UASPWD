@@ -14,7 +14,11 @@ function addToCart(e) {
   } else {
     cart.push(product);
     localStorage.setItem("cart", JSON.stringify(cart));
-    alert("Produk Berhasil Ditambahkan");
+    Swal.fire({
+      title: "Produk",
+      text: "Berhasil Ditambahkan",
+      icon: "success",
+    });
     updateCartTable();
   }
 }
@@ -67,8 +71,6 @@ const checkOut = () => {
   localStorage.removeItem("cart");
 
   localStorage.setItem("checkoutHistory", JSON.stringify(checkoutHistory));
-
-  alert("Checkout successful");
   updateCartTable();
 };
 
@@ -80,3 +82,26 @@ document.querySelectorAll("button[data-id]").forEach((button) => {
 });
 
 updateCartTable();
+
+const checkOutButton = document.querySelector(".checkout");
+
+checkOutButton.addEventListener("click", function () {
+  Swal.fire({
+    title: "Yakin?",
+    text: "Yakin ingin checkout barang ini??!",
+    icon: "warning",
+    showCancelButton: true,
+    confirmButtonColor: "#3085d6",
+    cancelButtonColor: "#d33",
+    confirmButtonText: "YAKIN",
+  }).then((result) => {
+    checkOut();
+    if (result.isConfirmed) {
+      Swal.fire({
+        title: "Berhasil Checkout",
+        text: "Produk berhasil dipesan!!",
+        icon: "success",
+      });
+    }
+  });
+});
